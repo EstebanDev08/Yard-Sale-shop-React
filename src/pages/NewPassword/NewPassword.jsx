@@ -1,9 +1,10 @@
 import React from "react";
-import './Login.scss'
+import { Input } from "../../componets/Form/Input";
+import './NewPassword.scss'
 
-const Login = () => {
+const NewPassword = () => {
     return (
-        <div className="login">
+        <div className="new-password">
             <div className="form-container">
                 <img src="./logos/logo_yard_sale.svg" alt="logo" className="logo" />
 
@@ -12,16 +13,18 @@ const Login = () => {
 
                 <form action="/" className="form">
                     <label htnlfor="password" className="label">Password</label>
-                    <input type="password" id="password" placeholder="*********" className="input input-password" />
+                    <Input type={'password'} />
 
                     <label htnlfor="new-password" className="label">Password</label>
-                    <input type="password" id="new-password" placeholder="*********" className="input input-password" />
+                    <Input type={'password'} id={"new-password"} />
 
-                    <input type="submit" value="Confirm" className="primary-button login-button" />
+                    <Input type={"submit"} value={'Confirm'} />
+
+
                 </form>
             </div>
         </div>
     )
 }
 
-export { Login }
+export { NewPassword }
