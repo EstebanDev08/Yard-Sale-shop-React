@@ -7,6 +7,7 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'main.js',
+        publicPath: '/',
     },
 
     mode: 'development',
@@ -24,11 +25,7 @@ module.exports = {
                     {
                         loader: 'babel-loader'
                     }
-
                 ]
-
-
-
             },
             {
                 test: /\.html$/,
@@ -37,8 +34,6 @@ module.exports = {
                         loader: 'html-loader'
                     },
                 ],
-
-
             },
             {
                 test: /\.s[ac]ss$/i,
@@ -46,7 +41,6 @@ module.exports = {
                     "style-loader",
                     "css-loader",
                     "sass-loader"
-
                 ],
             },
         ]
@@ -62,10 +56,13 @@ module.exports = {
         }),
     ],
     devServer: {
+
+
         static: {
             directory: path.join(__dirname, 'public'),
         },
         compress: true,
         port: 3005,
+        historyApiFallback: true,
     }
 }
