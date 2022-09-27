@@ -1,12 +1,11 @@
 import React from 'react'
-import './ButtonCategories.scss'
 
 const ButtonCategories = ({ name }) => {
 
     return (
-        <li>
-            <a href="/">{name}</a>
-        </li>
+        <p className="hover ">
+            <a href="#"> {name}</a>
+        </p>
     )
 }
 

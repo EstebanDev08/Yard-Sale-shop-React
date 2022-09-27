@@ -7,8 +7,8 @@ const Home = () => {
     return (
         <>
             <Header />
-            <section class="main-container">
-                <div class="cards-container">
+            <section className="main-container">
+                <div className="cards-container">
                     <ProductCard name={"bici"} precio={2500} />
                     <ProductCard name={"bici"} precio={2500} />
 

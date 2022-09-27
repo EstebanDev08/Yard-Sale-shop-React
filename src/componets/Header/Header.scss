@@ -1,58 +1,170 @@
-@use '../../styles/styles.scss';
+.flex-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 24px;
+
     border-bottom: 1px solid var(--very-light-pink);
+    height: 64px;
+    width: 100%;
+    z-index: 2;
 }
 
-.menu {
-    display: none;
+nav .icon-menu {
+
+    margin: 0 16px;
+    cursor: pointer;
 }
+
 
 .logo {
-    width: 100px;
+
+    height: 28px;
+
 }
 
-.navbar-left ul,
-.navbar-right ul {
+.logo img {
+    height: 100%;
+    margin: 0 16px 0 16px;
+}
+
+.categories {
+    display: none;
+    height: 70%;
+}
+
+.categories-container {
+
+    margin: 8px;
+    height: 80%;
+
+}
+
+.categories p {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.categories p a {
+
+
+    text-decoration: none;
+    color: gray;
+
+
+}
+
+.options {
+
+
+    font-size: var(--sm);
+    color: #414040;
+    justify-self: center;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+
+}
+
+.options p {
+    display: none;
+
+    cursor: pointer;
+}
+
+.options p span:nth-child(2) {
+    margin-left: 4px;
+    color: gray;
+    font-weight: bold;
+
+
+}
+
+
+.options img {
+    height: 28px;
+    cursor: pointer;
+    margin: 0 18px;
+
+}
+
+.hover:hover {
+    background-color: #eefcf1;
+}
+
+
+.options ul {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
     align-items: center;
     height: 60px;
+
+
 }
-
-.navbar-left {
-    display: flex;
-}
-
-.navbar-left ul {
-    margin-left: 12px;
-}
-
-
 
 .navbar-email {
-    color: var(--very-light-pink);
-    font-size: var(--sm);
-    margin-right: 12px;
+    display: none;
 }
 
 
 
-@media (max-width: 640px) {
-    .menu {
-        display: block;
+.navbar-shopping-cart {
+    position: relative;
+}
+
+.navbar-shopping-cart div {
+    width: 16px;
+    height: 16px;
+    background-color: var(--hospital-green);
+    border-radius: 50%;
+    font-size: var(--sm);
+    font-weight: bold;
+    position: absolute;
+    top: -6px;
+    right: -3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+@media (min-width: 1021px) {
+
+
+
+    nav {
+        min-width: 960px;
     }
 
-    .navbar-left ul {
+    nav .icon-menu {
         display: none;
+    }
+
+    .categories {
+        display: grid;
+        grid-template-columns: repeat(6, 100px);
+    }
+
+    .options {
+
+        min-width: 240px;
+
     }
 
     .navbar-email {
-        display: none;
+        display: inline;
+    }
+
+    .options ul {
+        display: flex;
     }
 }

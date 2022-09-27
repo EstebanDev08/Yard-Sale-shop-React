@@ -1,5 +1,4 @@
 import React from 'react'
-import './ShopingCar.scss'
 
 const ShopingCar = ({ totalProductsCar }) => {
     return (

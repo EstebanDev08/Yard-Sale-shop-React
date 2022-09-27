@@ -1,0 +1,18 @@
+.value {
+    color: var(--very-light-pink);
+    font-size: var(--md);
+    margin: 8px 0 32px 0;
+}
+
+
+
+@media (max-width: 640px) {
+    .edit-account .form-container {
+        height: 100%;
+    }
+
+    .edit-account .form {
+        height: 100%;
+        justify-content: space-between;
+    }
+}

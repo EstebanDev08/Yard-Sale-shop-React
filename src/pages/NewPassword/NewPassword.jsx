@@ -4,7 +4,7 @@ import './NewPassword.scss'
 
 const NewPassword = () => {
     return (
-        <div className="new-password">
+        <div className="new-password login">
             <div className="form-container">
                 <img src="./logos/logo_yard_sale.svg" alt="logo" className="logo" />
 

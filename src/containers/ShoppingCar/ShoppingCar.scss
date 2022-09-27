@@ -1,0 +1,58 @@
+/* mi orden menu despegable */
+
+
+.shoping-car-products {
+    width: 360px;
+
+    box-sizing: border-box;
+    position: absolute;
+    right: 0;
+
+    background-color: var(--white);
+
+    border-radius: 8px;
+    border: 1px solid var(--vety-light-gray);
+}
+
+.title-container {
+    display: flex;
+    margin: 24px;
+    cursor: pointer;
+}
+
+
+.title-container img {
+    transform: rotate(180deg);
+    margin-right: 14px;
+}
+
+.title {
+    font-size: var(--lg);
+    font-weight: bold;
+}
+
+.my-order-content {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.my-order-content .primary-button {
+    background-color: var(--hospital-green);
+    border-radius: 8px;
+    border: none;
+    color: var(--white);
+    width: 80%;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    height: 50px;
+
+    margin: 24px auto;
+
+
+}
+
+.primary-button:active {
+    background-color: #98d9a1;
+}

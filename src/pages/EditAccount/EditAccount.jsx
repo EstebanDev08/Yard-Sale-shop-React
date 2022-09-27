@@ -1,31 +1,29 @@
 import React from 'react'
-import './MyAccount.scss'
-import { Input } from '../../componets/Form/Input'
+import './EditAccount.scss'
 
-const MyAccount = () => {
+const EditAccount = () => {
     return (
-        <div className="login">
+        <div className="edit-account login">
             <div className="form-container">
                 <h1 className="title">My account</h1>
 
                 <form action="/" className="form">
                     <div>
                         <label htmlFor="name" className="label">Name</label>
-                        <Input type={"text"} id={'name'} placeholder={"Your name"} />
+                        <p className="value">Camila Yokoo</p>
 
                         <label htmlFor="email" className="label">Email</label>
-                        <Input type={'email'} placeholder={'ejemplo@email.com'} />
-
+                        <p className="value">camilayokoo@gmail.com</p>
 
                         <label htmlFor="password" className="label">Password</label>
-                        <Input type={'password'} />
+                        <p className="value">*********</p>
                     </div>
 
-                    <Input type={"submit"} value={'Create'} />
+                    <input type="submit" value="Edit" className="secondary-button login-button" />
                 </form>
             </div>
         </div>
     )
 }
 
-export { MyAccount }
+export { EditAccount }

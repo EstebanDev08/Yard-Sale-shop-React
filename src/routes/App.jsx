@@ -2,12 +2,13 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import '../styles/styles.scss'
 import { Layout } from "../containers/layout/Layout";
-import { RecoveryPassword } from "../containers/RecoveryPassword/RecoveryPassword";
+import { RecoveryPassword } from '../pages/RecoveryPassword/RecoveryPassword'
 import { Home } from "../pages/Home/Home";
 import { Notfound } from "../pages/NotFound/NotFound";
 import { Login } from "../pages/Login/Login";
 import { NewPassword } from "../pages/NewPassword/NewPassword";
-import { MyAccount } from "../pages/MyAccount/MyAccount";
+import { CreateAccount } from "../pages/CreateAccount/CreateAccount";
+import { EditAccount } from "../pages/EditAccount/EditAccount";
 
 
 const App = () => {
@@ -21,13 +22,14 @@ const App = () => {
                     <Route exact path="/login" element={<Login />} />
                     <Route exact path="/new-password" element={<NewPassword />} />
                     <Route exact path="/recovery-password" element={<RecoveryPassword />} />
-                    <Route exact path="/my-account" element={<MyAccount />} />
+                    <Route exact path="/create-account" element={<CreateAccount />} />
+                    <Route exact path="/edit-account" element={<EditAccount />} />
 
                     <Route path="*" element={<Notfound />} />
 
-
                 </Routes>
             </Layout>
+
         </BrowserRouter>
 
     )

@@ -1,0 +1,24 @@
+.create-account .title {
+    font-size: var(--lg);
+    margin-bottom: 36px;
+    text-align: start;
+}
+
+
+.form-create-account div {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+@media (max-width: 640px) {
+    .create-account .form-container {
+        height: 100%;
+    }
+
+    .form-create-account {
+        height: 100%;
+        justify-content: space-between;
+    }
+}

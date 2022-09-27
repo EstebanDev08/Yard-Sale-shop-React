@@ -3,7 +3,7 @@ import './RecoveryPassword.scss'
 
 const RecoveryPassword = () => {
     return (
-        <div className="login">
+        <div className="recovery-password login">
             <div className="form-container">
                 <img src="./logos/logo_yard_sale.svg" alt="logo" className="logo" />
 

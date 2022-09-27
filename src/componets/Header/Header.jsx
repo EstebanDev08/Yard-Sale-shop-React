@@ -8,29 +8,38 @@ const Header = () => {
 
 
     return (
-        <nav>
-            <img src="./icons/icon_menu.svg" alt="menu" className="menu" />
+        <nav className="flex-row">
 
-            <div className="navbar-left">
-                <img src="./logos/logo_yard_sale.svg" alt="logo" className="logo" />
+            <img className="icon-menu btn-menu-despegable" src="icons/icon_menu.svg" alt="menu icono" />
 
-                <ul>
+
+            <div className="categories-container flex-row">
+                <figure className="logo">
+                    <a href="./index.html"> <img src="Logos/logo_yard_sale.svg" alt="logo empresa yard sale" /> </a>
+                </figure>
+
+                <div className="categories flex-row">
+
                     <ButtonCategories name={"All"} />
-                    <ButtonCategories name={"Clothes"} />
+                    <ButtonCategories name={"clothes"} />
                     <ButtonCategories name={"Electronics"} />
                     <ButtonCategories name={"Furnitures"} />
-                    <ButtonCategories name={"Toys"} />
+                    <ButtonCategories name={"Shoes"} />
                     <ButtonCategories name={"Others"} />
 
-                </ul>
+                </div>
             </div>
 
-            <div className="navbar-right">
+            <div className="options ">
                 <ul>
                     <EmailOptions email={"platzi@example.com"} />
                     <ShopingCar totalProductsCar={2} />
                 </ul>
+
             </div>
+
+
+
         </nav>
     )
 }
