@@ -13,7 +13,7 @@ const ProductCard = ({ precio, name }) => {
                     <p>{name}</p>
                 </div>
                 <figure>
-                    <img src={addCarImg} alt="" />
+                    <img src={addCarImg} alt={name} />
                 </figure>
             </div>
         </div>

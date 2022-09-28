@@ -1,0 +1,57 @@
+.order-container h3 {
+    text-align: center;
+    width: 320px;
+    margin-bottom: 16px;
+}
+
+.order-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+
+    height: 100%;
+}
+
+.info-order {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--text-input-field);
+    border-radius: 12px;
+    width: 320px;
+}
+
+.info-order p {
+    margin: 16px;
+
+}
+
+.info-order p span:nth-child(1) {
+
+    font-weight: bold;
+}
+
+.info-order p span:nth-child(2) {
+
+    font-size: var(--sm);
+    color: gray;
+}
+
+.precio {
+    font-weight: bold;
+    font-size: var(--md);
+}
+
+.precio span {
+    margin: 8px;
+}
+
+.Card-orders {
+    margin: 4px;
+}
+
+.Card-orders p:nth-child(3) {
+    color: gray;
+}

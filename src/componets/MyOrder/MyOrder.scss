@@ -1,0 +1,85 @@
+.my-order h3 {
+    text-align: left;
+    width: 100%;
+}
+
+.my-order .order-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+
+    height: 100%;
+}
+
+.my-order .info-order {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--text-input-field);
+    border-radius: 12px;
+    width: 320px;
+}
+
+.my-order .info-order p {
+    margin: 16px;
+
+}
+
+.my-order .info-order p span:nth-child(1) {
+
+    font-weight: bold;
+}
+
+.my-order .info-order p span:nth-child(2) {
+
+    font-size: var(--sm);
+    color: gray;
+}
+
+.my-order .precio {
+    font-weight: bold;
+    font-size: var(--md);
+}
+
+
+.my-order .card-container {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    align-items: center;
+
+}
+
+.my-order .card-product {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 12px;
+
+}
+
+.my-order .card-product p {
+    padding: 20px;
+}
+
+.my-order .card-product figure {
+    margin: 0;
+    height: 100%;
+    padding: 0;
+
+}
+
+.my-order .card-product figure img {
+    height: 80px;
+    border-radius: 24px;
+}
+
+.my-order .card-product p:nth-child(2) {
+    color: gray;
+    width: 100%;
+    font-size: var(--sm);
+}
