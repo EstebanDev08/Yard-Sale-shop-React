@@ -1,10 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './ProductCard.scss'
 import addCarImg from '@icons/bt_add_to_cart.svg'
 
 const ProductCard = ({ precio, name }) => {
-    return (
 
+    const [cart, setCart] = useState([]);
+    const handleClick = () => {
+        setCart([]);
+    }
+
+    return (
         <div className="product-card">
             <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" />
             <div className="product-info">
@@ -12,9 +17,10 @@ const ProductCard = ({ precio, name }) => {
                     <p>${precio}</p>
                     <p>{name}</p>
                 </div>
-                <figure>
+                <figure onClick={handleClick}>
                     <img src={addCarImg} alt={name} />
                 </figure>
+
             </div>
         </div>
     )
