@@ -1,9 +1,18 @@
 .desktop-menu {
-    width: 100px;
+    width: 150px;
     height: auto;
+    padding: 20px 20px 0 20px;
+
+    position: absolute;
+
+    top: 48px;
+    right: 70px;
+
     border: 1px solid var(--very-light-pink);
     border-radius: 6px;
-    padding: 20px 20px 0 20px;
+
+    background-color: #fff;
+
 }
 
 .desktop-menu ul {

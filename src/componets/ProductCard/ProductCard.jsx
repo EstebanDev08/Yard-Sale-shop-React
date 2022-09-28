@@ -2,23 +2,24 @@ import React, { useState } from 'react'
 import './ProductCard.scss'
 import addCarImg from '@icons/bt_add_to_cart.svg'
 
-const ProductCard = ({ precio, name }) => {
+const ProductCard = ({ product }) => {
 
     const [cart, setCart] = useState([]);
     const handleClick = () => {
         setCart([]);
     }
 
+
     return (
         <div className="product-card">
-            <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" />
+            <img src={product.images[0]} alt={product.title} />
             <div className="product-info">
                 <div>
-                    <p>${precio}</p>
-                    <p>{name}</p>
+                    <p>${product.price}</p>
+                    <p>{product.title}</p>
                 </div>
                 <figure onClick={handleClick}>
-                    <img src={addCarImg} alt={name} />
+                    <img src={addCarImg} alt="add to car" />
                 </figure>
 
             </div>

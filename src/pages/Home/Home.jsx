@@ -1,23 +1,14 @@
 import React from 'react'
 import './Home.scss'
 import { Header } from '../../componets/Header/Header'
-import { ProductCard } from '../../componets/ProductCard/ProductCard'
+import { ProductList } from '../../containers/ProductList/ProductList'
 
 const Home = () => {
     return (
         <>
             <Header />
             <section className="main-container">
-                <div className="cards-container">
-                    <ProductCard name={"bici"} precio={2500} />
-                    <ProductCard name={"bici"} precio={2500} />
-
-                    <ProductCard name={"bici"} precio={2500} />
-                    <ProductCard name={"bici"} precio={2500} />
-                    <ProductCard name={"bici"} precio={2500} />
-                    <ProductCard name={"bici"} precio={2500} />
-
-                </div>
+                <ProductList />
             </section>
         </>
 

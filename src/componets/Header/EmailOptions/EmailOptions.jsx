@@ -1,8 +1,18 @@
 import React from 'react'
 
-const EmailOptions = ({ email }) => {
+const EmailOptions = ({ email, toggleMenu }) => {
+
+    const handelToggle = () => {
+        toggleMenu(toggle => !toggle)
+
+
+    }
+
+
+
+
     return (
-        <li className="navbar-email">{email}</li>
+        <li onClick={handelToggle} className="navbar-email">{email}</li>
 
     )
 }

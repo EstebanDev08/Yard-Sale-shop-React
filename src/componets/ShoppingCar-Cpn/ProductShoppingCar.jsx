@@ -1,4 +1,6 @@
 import React from 'react'
+import closeIcon from '@icons/icon_close.png'
+
 import './ShoppingCar-Cpn.scss'
 
 const ProductShoppinCar = ({ name, price, image }) => {
@@ -10,7 +12,7 @@ const ProductShoppinCar = ({ name, price, image }) => {
             </figure>
             <p>{name}</p>
             <p>${price}</p>
-            <img src="./icons/icon_close.png" alt="close" />
+            <img src={closeIcon} alt="close" />
         </div>
     )
 }

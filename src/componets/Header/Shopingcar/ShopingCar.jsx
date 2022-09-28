@@ -2,9 +2,14 @@ import React from 'react'
 import shoppingCart from '@icons/icon_shopping_cart.svg';
 
 
-const ShopingCar = ({ totalProductsCar }) => {
+const ShopingCar = ({ totalProductsCar, toggleMenu }) => {
+
+    const handelToggle = () => {
+        toggleMenu(toggle => !toggle)
+    }
+
     return (
-        <li className="navbar-shopping-cart">
+        <li onClick={handelToggle} className="navbar-shopping-cart">
             <img src={shoppingCart} alt="shopping cart" />
             <div>{totalProductsCar}</div>
         </li>

@@ -1,6 +1,7 @@
 import React from 'react'
 import { InfoShoppingCar } from '../../componets/ShoppingCar-Cpn/InfoShoppingCar'
 import { ProductShoppinCar } from '../../componets/ShoppingCar-Cpn/ProductShoppingCar'
+import flechaIcon from '@icons/flechita.svg'
 
 import "./ShoppingCar.scss"
 
@@ -9,7 +10,7 @@ const ShoppingCar = () => {
     return (
         <aside className="shoping-car-products menu-despegable">
             <div className="title-container">
-                <img src="./icons/flechita.svg" alt="arrow" />
+                <img src={flechaIcon} alt="arrow" />
                 <p className="title">My order</p>
             </div>
             <div className="my-order-content">
